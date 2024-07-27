@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Daemonset
 metadata:
   name: my-daemon
-spec
+spec:
   selector:
     matchLabels:
       app:nginx
