@@ -1,8 +1,7 @@
 apiVersion: apps/v1
 kind: DaemonSet
 metadata:
-  name: my-daemon
-spec:
+  name: mydaemon
   selector:
     matchLabels:
       app: nginx
@@ -12,7 +11,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - name: my_pod
+      - name: mypod
         image: nginx:latest
         ports:
         - containerPort: 80
