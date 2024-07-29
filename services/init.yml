@@ -7,7 +7,7 @@ spec:
       - name: busybox
         image: busybox
         command: ["/bin/sh"]
-        args: ["-c", "sleep 10"]
+        args: ["-c", "sleep 50"]
     containers:
       - name: my-img1
         image: nginx:latest
