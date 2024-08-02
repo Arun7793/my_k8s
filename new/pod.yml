@@ -5,6 +5,6 @@ metadata:
 spec:
     containers:
     - name: my-container
-      image: pull nginx:stable-alpine3.19-perl
+      image: nginx:stable-alpine3.19-perl
       ports:
       - containerPort: 80
