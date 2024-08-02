@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+    name: my-pod
+spec:
+    containers:
+    - name: my-container
+      image: pull nginx:stable-alpine3.19-perl
+      ports:
+      - containerPort: 80
