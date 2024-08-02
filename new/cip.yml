@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Services
+metadata:
+    name: my-cip
+spec:
+    selector:
+        app: nginx
+    ports:
+     - name: http
+       port: 8080
+       targetPort: 8090
