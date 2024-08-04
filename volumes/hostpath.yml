@@ -10,9 +10,9 @@ spec:
       - containerPort: 8090
       volumeMounts:
       - name: my-vol
-        mountPath: '/home/ubuntu/'
+        mountPath: /app/container_vol
     volumes:
     - name: my-vol
       hostpath:
-        path: '/home/ubuntu/files'
+        path: /home/ubuntu/files
         type: DirectoryOrCreate  
