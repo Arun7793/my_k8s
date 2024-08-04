@@ -13,6 +13,6 @@ spec:
         mountPath: /app/container_vol
     volumes:
     - name: my-vol
-      hostpath:
+      hostPath:
         path: /home/ubuntu/files
         type: DirectoryOrCreate  
